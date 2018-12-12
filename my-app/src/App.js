@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Nav from './components/Nav';
 import Wrapper from './components/Wrapper';
 import Instructions from './components/Instructions';
 import GameArea from './components/GameArea';
@@ -172,15 +173,16 @@ class App extends Component {
 
   render() {
     return (
+      <div>
+      <Nav currentScore={this.state.currentScore} />
       <Wrapper>
-        <Instructions 
-          currentScore={this.state.currentScore} 
-          />
+        <Instructions />
         <GameArea 
           data={this.state.data}
           handleIncrement={this.handleIncrement}
         />
       </Wrapper>
+      </div>
     );
   }
 }
