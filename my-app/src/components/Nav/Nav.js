@@ -14,6 +14,7 @@ const Nav = (props) => {
       <Counter 
         //include the props from the counter state in App
         currentScore={props.currentScore}
+        topScore={props.topScore}
       />
     </Navbar>
   );

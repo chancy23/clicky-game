@@ -1,3 +1,7 @@
+#instructionsDisplay {
+    width: 70%
+}
+
 .jumbotron {
     background-color: black;
     color: gray;
@@ -9,4 +13,27 @@
 
 .jumbotron>hr {
     border-top-color: #FF0971;
+}
+
+
+/* adjust mobile responsiveness */
+@media only screen and (max-width: 812px) {
+    .jumbotron {
+        margin-top: 15%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #instructionsDisplay {
+        width: 95%;
+    }
+    .jumbotron {
+        margin-top: 25%;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    .jumbotron {
+        margin-top: 40%;
+    }
 }
