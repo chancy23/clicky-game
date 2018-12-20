@@ -1,5 +1,7 @@
 ## Clicky Game
 
+## Deployed at: https://chancy23.github.io/clicky-game/
+
 # Overview
   * A memory game where the user tries to click on every image without clicking the same image twice. 
   * Every time an image is clicked the images shuffle.
